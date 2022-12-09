@@ -1,0 +1,8 @@
+com\demo\javamongo\repository\QuestionnaireRepository.class
+com\demo\javamongo\controllers\QuestionnaireController.class
+com\demo\javamongo\interfaces\IQuestionnaireService.class
+com\demo\javamongo\model\QuestionnaireDTO.class
+com\demo\javamongo\services\QuestionnaireService.class
+com\demo\javamongo\model\Questionnaire.class
+com\demo\javamongo\utils\ObjectMapperUtils.class
+com\demo\javamongo\JavamongoApplication.class
