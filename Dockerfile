@@ -1,4 +1,4 @@
 FROM openjdk:8-jdk-alpine
 MAINTAINER baeldung.com
-COPY target/docker-message-server-1.0.0.jar message-server-1.0.0.jar
+COPY out/artifacts/javamongo_jar/javamongo.jar javamongo.jar
 ENTRYPOINT ["java","-jar","/javamongo.jar"]
