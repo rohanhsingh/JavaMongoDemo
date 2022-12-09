@@ -1,4 +1,4 @@
 FROM openjdk:17
 MAINTAINER baeldung.com
-COPY out/artifacts/javamongo_jar/javamongo.jar javamongo.jar
-ENTRYPOINT ["java","-jar","/javamongo.jar"]
+COPY target/javamongo-0.0.1-SNAPSHOT-exec.jar javamongo-0.0.1-SNAPSHOT-exec.jar
+ENTRYPOINT ["java","-jar","/javamongo-0.0.1-SNAPSHOT-exec.jar.jar"]
