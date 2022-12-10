@@ -1,4 +1,10 @@
-FROM openjdk:17
-MAINTAINER baeldung.com
-COPY target/javamongo-0.0.1-SNAPSHOT-exec.jar javamongo-0.0.1-SNAPSHOT-exec.jar
-ENTRYPOINT ["java","-jar","/javamongo-0.0.1-SNAPSHOT-exec.jar"]
+FROM eclipse-temurin
+WORKDIR /app
+
+COPY .mvn/ .mvn
+COPY mvnw pom.xml ./
+RUN ./mvnw dependency:go-offline
+
+COPY src ./src
+
+CMD ["./mvnw", "spring-boot:run"]
